@@ -1,10 +1,12 @@
-sap.ui.define([
-  "sap/ui/core/mvc/Controller"
-], (BaseController) => {
-  "use strict";
+sap.ui.define(
+  ["sap/ui/core/mvc/Controller", "sap/m/MessageBox"],
+  (Controller, MessageBox) => {
+    "use strict";
 
-  return BaseController.extend("project1.controller.App", {
-      onInit() {
-      }
-  });
-});
+    return Controller.extend("project1.controller.App", {
+      onSayHello: () => {
+        MessageBox.information("Hello World");
+      },
+    });
+  },
+);
