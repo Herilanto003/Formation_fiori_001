@@ -17,18 +17,24 @@
     <script
       id="sap-ui-bootstrap"
       src="resources/sap-ui-core.js"
-      data-sap-ui-theme="sap_horizon"
+      data-sap-ui-theme="sap_fiori_3"
+      data-sap-ui-libs="sap.m"
       data-sap-ui-resource-roots='{
             "project1": "./"
         }'
       data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
       data-sap-ui-compat-version="edge"
-      data-sap-ui-async="true"
+      data-sap-ui-async="false"
       data-sap-ui-frame-options="trusted"
     ></script>
+
+    <script>
+      var oText = new sap.m.Text({ text: "Hello World" });
+      oText.placeAt("content");
+    </script>
   </head>
   <body class="sapUiBody sapUiSizeCompact" id="content">
-    <div
+    <!-- <div
       data-sap-ui-component
       data-name="project1"
       data-id="container"
@@ -36,6 +42,6 @@
       data-handle-validation="true"
     >
       <div>Hello World</div>
-    </div>
+    </div> -->
   </body>
 </html>
