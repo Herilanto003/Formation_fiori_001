@@ -18,13 +18,12 @@
       id="sap-ui-bootstrap"
       src="resources/sap-ui-core.js"
       data-sap-ui-theme="sap_fiori_3"
-      data-sap-ui-libs="sap.m"
       data-sap-ui-resource-roots='{
             "project1": "./"
         }'
-      data-sap-ui-on-init="module:project1/index"
+      data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
       data-sap-ui-compat-version="edge"
-      data-sap-ui-async="false"
+      data-sap-ui-async="true"
       data-sap-ui-frame-options="trusted"
     ></script>
   </head>
@@ -38,5 +37,12 @@
     >
       <div>Hello World</div>
     </div> -->
+
+    <div
+      data-sap-ui-component
+      data-id="container"
+      data-name="project1"
+      data-settings='{"id" : "project1"}'
+    ></div>
   </body>
 </html>

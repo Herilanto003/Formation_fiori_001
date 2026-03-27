@@ -2,6 +2,7 @@
   controllerName="project1.controller.App"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns="sap.m">
+  
 
   <Button id="btn" text="Say hello" press=".onSayHello"></Button>
 
