@@ -22,16 +22,11 @@
       data-sap-ui-resource-roots='{
             "project1": "./"
         }'
-      data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
+      data-sap-ui-on-init="module:project1/index"
       data-sap-ui-compat-version="edge"
       data-sap-ui-async="false"
       data-sap-ui-frame-options="trusted"
     ></script>
-
-    <script>
-      var oText = new sap.m.Text({ text: "Hello World" });
-      oText.placeAt("content");
-    </script>
   </head>
   <body class="sapUiBody sapUiSizeCompact" id="content">
     <!-- <div
