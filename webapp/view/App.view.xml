@@ -1,9 +1,17 @@
 <mvc:View
-  controllerName="project1.controller.App"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m">
-  
-
-  <Button id="btn" text="Say hello" press=".onSayHello"></Button>
-
+    controllerName="project1.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"
+>
+    <Shell id="shell">
+        <App id="project1">
+            <pages>
+                <mvc:XMLView
+                    id="_IDGenXMLView"
+                    viewName="project1.view.Overview"
+                />
+            </pages>
+        </App>
+    </Shell>
 </mvc:View>

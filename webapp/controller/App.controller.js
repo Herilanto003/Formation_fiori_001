@@ -3,10 +3,6 @@ sap.ui.define(
   (Controller, MessageBox) => {
     "use strict";
 
-    return Controller.extend("project1.controller.App", {
-      onSayHello: () => {
-        MessageBox.information("Hello World");
-      },
-    });
+    return Controller.extend("project1.controller.App", {});
   },
 );
